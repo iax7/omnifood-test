@@ -96,4 +96,17 @@ $(document).ready(function() {
         offset: '50%'
     });
 
+    // Mobile Nav
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('#nav-icon');
+
+        nav.slideToggle(200);
+
+        if (icon.attr('name') === 'ios-menu')
+            icon.attr('name', 'close');
+        else
+            icon.attr('name', 'ios-menu');
+    })
+
 });
