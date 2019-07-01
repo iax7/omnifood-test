@@ -63,4 +63,37 @@ $(document).ready(function() {
         }
       });
 
+    // Animations on Scroll
+    var features = new Waypoint({
+        element: $('.js--wp1'),
+        handler: function(direction) {
+            $('.js--wp1').addClass('animated fadeIn');
+        },
+        offset: '50%'
+    });
+
+    var works = new Waypoint({
+        element: $('.js--wp2'),
+        handler: function(direction) {
+            $('.js--wp2').addClass('animated fadeInUp');
+        },
+        offset: '50%'
+    });
+
+    var cities = new Waypoint({
+        element: $('.js--wp3'),
+        handler: function(direction) {
+            $('.js--wp3').addClass('animated fadeIn');
+        },
+        offset: '50%'
+    });
+
+    var premium = new Waypoint({
+        element: $('.js--wp4'),
+        handler: function(direction) {
+            $('.js--wp4').addClass('animated pulse');
+        },
+        offset: '50%'
+    });
+
 });

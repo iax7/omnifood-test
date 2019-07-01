@@ -598,3 +598,25 @@ footer p {
     text-align: center;
     margin-top: 20px;
 }
+
+/* --------------------------------------------------------------------------------------*/
+/* ANIMATIONS */
+/* --------------------------------------------------------------------------------------*/
+.js--wp1,
+.js--wp2,
+.js--wp3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp1.animated,
+.js--wp2.animated,
+.js--wp3.animated {
+    opacity: 1;
+}
